@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.accueil{
+  display: flex;
+  height: 100%;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titretexte {
+ 
+
+  margin: 1rem;
+  border: dashed black 2px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2rem;
+
+}
+ 
+.titretexte h2{
+  padding: 2rem;
+
+}
+
+.accueil img {
+   border: solid black 2px;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  background-image: url(Image/1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar .logo {
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(199, 23, 23);
+}
+
+.navbar .nav-link ul {
+  display: flex;
+}
+.navbar .nav-link ul li {
+  margin: 0 30px;
+}
+
+.navbar .nav-link ul li.active a {
+  color: rgb(221, 63, 63);
+  font-weight: 600;
+}
+
+
+.navbar .menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  .navbar .menu {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    background-color: rgba(207, 207, 207, 0.274);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-link.mobile-menu {
+    margin-left: 0;
+  }
+
+  .nav-link ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-link ul li {
+    margin: 30px 0;
+    font-size: 1em;
+  }
+}
+
+.Photos img {
+  height: 600px;
+  width: 25rem;
+  margin: 1rem;
+}
+
+.Photos {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.support {
+  display: block;
+  column-count: 4;
+  padding: 3rem;
+  margin: 2rem;
+  border: dashed 2px black;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+.support h2{
+
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.support p{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+.support img {
+  height: 500px;
+  width: 500px;
+}
+
+#numero {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+
+.apropos{
+
+   display: flex;
+  align-items:center;
+}
+
+.apropos img{
+
+height: px;
+
+}
+
+.textcarte {
+  
+
+ column-count: 2; 
+ border: dashed black 2px;
+ margin: 1rem;
+ padding: 2rem;
+ text-align: center;
+
+}
+
+.apropos p{
+
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+
+
+footer {
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+}
+
+
+
+.question {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 2rem;
+border: dashed black 2px;
+}
+
+
+
+.question input {
+  width: 500px;
+  height: 10px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: dashed rgb(0, 0, 0) 2px;
+}
+
+.question button {
+
+    width: 500px;
+    height: 50px;
+    padding: 0 20 px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: dashed rgb(0, 0, 0) 2px;
+    background-color: rgba(32, 32, 51, 0.671);
+}
+
+.question textarea {
+  display: block;
+  width: 1000px;
+  height: 350px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: dashed rgb(0, 0, 0) 2px;
+
+}
+.question input:focus {
+ border: solid rgb(253, 9, 9) 2px;
+ outline: 0;
+
+}
+
+.question textarea:focus {
+ border: solid rgb(248, 5, 5) 2px;
+ outline: 0;
+
+}
+
+.question button:focus {
+  border: solid rgb(228, 12, 12) 2px;
+  outline: 0;
+ 
+ }
+
+ .question img {
+      
+  margin: 5rem;
+  
+ }
+
+ 
+@media screen and (max-width: 1500px) {
+  p { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+  .apropos { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .accueil { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .question { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  img { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  form { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .question { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .textcarte { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .support { width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}

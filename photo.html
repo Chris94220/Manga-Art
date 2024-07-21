@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Photo</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">MANGAS ART</a>
+
+      <div class="nav-link">
+        <ul>
+          <li class="active"><a href="index.html">Acceuil</a></li>
+          <li><a href="photo.html">Photos</a></li>
+          <li><a href="a propos.html">A propos</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Nous Contacter</a></li>
+        </ul>
+      </div>
+      <img src="Image/menu.png" alt="menu" class="menu" />
+    </nav>
+
+    <header></header>
+    <h1>Gallerie</h1>
+
+    <div class="Photos">
+      <img src="Image/2.jpg" />
+      <img src="Image/3.jpg" />
+      <img src="Image/4.jpg" />
+      <img src="Image/5.jpg" />
+      <img src="Image/7.jpg" />
+      <img src="Image/8.jpg" />
+      <img src="Image/9.jpg" />  
+      <img src="Image/10.jpg" />
+      <img src="Image/11.jpg" />
+      <img src="Image/12.jpg" />
+      <img src="Image/13.jpg" />
+      <img src="Image/14.jpg" />
+    
+    </div>
+
+    <footer>
+      <p>copyright EMILE PEREIRA Christopher 2024</p>
+    </footer>
+
+    <script>
+      const menuHamburger = document.querySelector(".menu");
+      const navLink = document.querySelector(".nav-link");
+
+      menuHamburger.addEventListener("click", () => {
+        navLink.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
