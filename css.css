@@ -169,9 +169,10 @@ header {
 }
 
 .support p{
-    padding: 1rem;
+    padding: 5rem;
     font-weight: bold;
     font-size: 18px;
+
 }
 .support img {
   height: 500px;
@@ -228,6 +229,7 @@ align-items: center;
 justify-content: center;
 margin: 2rem;
 border: dashed black 2px;
+padding: 2rem;
 }
 
 
@@ -347,3 +349,4 @@ border: dashed black 2px;
     flex-direction: column;
   }
 }
+
