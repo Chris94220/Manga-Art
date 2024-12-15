@@ -40,6 +40,14 @@ body {
 
 }
 
+.navbar .contact {
+  color: rgb(252, 247, 247); text-shadow: 
+  2px 2px 0 black,  /* Ombre en bas à droite */
+ -2px 2px 0 black,  /* Ombre en bas à gauche */
+  2px -2px 0 black, /* Ombre en haut à droite */
+ -2px -2px 0 black; /* Ombre en haut à gauche */
+}
+
 h1 {
   text-align: center;
   font-size: 70px;
@@ -85,6 +93,7 @@ header {
 .navbar .nav-link ul li.active a {
   color: rgb(221, 63, 63);
   font-weight: 600;
+  
 }
 
 
@@ -94,6 +103,7 @@ header {
   top: 50px;
   right: 50px;
   width: 35px;
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -293,6 +303,7 @@ padding: 2rem;
   p { width: 90%;
     color: red;
     flex-direction: column;
+    
   }
 
 }
