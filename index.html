@@ -2,39 +2,114 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mangas Art - Accueil</title>
     <link rel="stylesheet" href="css.css" />
-    <link rel="icon" href="Image/book-solid (1).svg" type="image/x-icon">
+    <link rel="icon" href="Image/book-solid (1).svg" type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="#" class="logo">MANGAS ART</a>
+    <!--Nav-->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">MANGAS ART</a>
 
-      <div class="nav-link">
-        <ul>
-          <li class="active"><a href="index.html">Accueil</a></li>
-          <li><a href="photo.html">Photos</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="contact.html" class="contact">Nous Contacter</a></li>
-        </ul>
-      </div>
-      <img src="./Image/menu.png" alt="menu" class="menu" />
-    </nav>
+        <div class="nav-link">
+          <ul>
+            <li class="active"><a href="index.html">Accueil</a></li>
+            <li><a href="photo.html">Photos</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html" class="contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <img src="./Image/menu.png" alt="menu" class="menu" />
+      </nav>
+    </header>
 
-    <header></header>
-
+    <h2>Bienvenue Sur Notre Site</h2>
+    <!--Contenue-->
     <main class="accueil">
-      <img src="Image/15.jpg" alt="Un exemple de manga présenté sur notre site">
+
+
+      <img
+        src="Image/15.jpg"
+        alt="Un exemple de manga présenté sur notre site"
+      />
       <div class="titretexte">
-        <h2>Bienvenue Sur Notre Site</h2>
+        <h2>A savoir !!!</h2>
+
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates repellat neque commodi libero fuga? ...
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          repellat neque commodi libero fuga? ... Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Iusto nihil veniam deleniti veritatis
+          molestiae incidunt eius laboriosam blanditiis dignissimos nisi
+          delectus explicabo eveniet architecto hic soluta nesciunt, dolores
+          perspiciatis temporibus? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Velit placeat facere quae, eos harum, rem unde
+          aliquam consequuntur optio assumenda fuga nobis praesentium possimus
+          vel debitis temporibus autem labore
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sint
+          vero maiores impedit enim nostrum odit corporis, neque tempore totam
+          soluta et. Nostrum iusto itaque aut a dolorum, accusamus aliquid.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+          veritatis explicabo. Harum vel, quam distinctio aliquid quidem dolor
+          omnis aliquam illo animi beatae debitis architecto eos pariatur iure
+          doloremque quae.
         </p>
       </div>
     </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Email</a>
+          </li>
+          <li>
+            <a href="contact.html"> <i class="fas fa-phone"></i> Numero</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fas fa-map-marker-alt"></i> Adresse</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>&copy; 2024 EMILE PEREIRA Christopher</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Reseaux</h3>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a href="http://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script>
       const menuHamburger = document.querySelector(".menu");
@@ -44,9 +119,5 @@
         navLink.classList.toggle("mobile-menu");
       });
     </script>
-
-    <footer>
-      <p>&copy; 2024 EMILE PEREIRA Christopher</p>
-    </footer>
   </body>
 </html>
