@@ -346,7 +346,7 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   p {
     width: 90%;
-    color: red;
+  
     flex-direction: column;
   }
 }
@@ -354,7 +354,7 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   .apropos {
     width: 90%;
-    color: red;
+    
     flex-direction: column;
   }
 }
@@ -362,7 +362,6 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   .Photos {
     width: 90%;
-    color: red;
     flex-direction: column;
   }
 }
@@ -370,7 +369,7 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   .accueil {
     width: 90%;
-    color: red;
+    
     flex-direction: column;
   }
 }
@@ -378,7 +377,7 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   .question {
     width: 90%;
-    color: red;
+   
     flex-direction: column;
   }
 }
@@ -386,7 +385,7 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   img {
     width: 90%;
-    color: red;
+    
     flex-direction: column;
   }
 }
@@ -415,7 +414,6 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   .support {
     width: 90%;
-    color: red;
     flex-direction: column;
   }
 }
