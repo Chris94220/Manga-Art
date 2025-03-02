@@ -10,44 +10,34 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   height: 100vh;
   position: relative;
 }
-
 
 .accueil {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
   flex-wrap: wrap;
   text-align: left;
   border: solid 3px;
   margin: 10px;
-  
 }
 
-.accueil img{
-
-border: solid 3px;
-margin: 10px;
-height: 500px;
-
+.accueil img {
+  border: solid 3px;
+  margin: 10px;
+  height: 500px;
 }
-
 
 .titretexte {
-
   flex-direction: row;
   align-items: center;
   max-width: 1000px;
   border: dashed 3px;
   margin: 10px;
-
 }
-
-
 
 .titretexte-text {
   flex: 1;
@@ -65,12 +55,12 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-h2{
+h2 {
   text-align: center;
   margin-top: 10px;
   font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 
 /*NAVBAR*/
 header {
@@ -83,11 +73,10 @@ header {
 }
 
 .navbar .contact {
-  color: rgb(252, 247, 247); text-shadow: 
-  2px 2px 0 black,  /* Ombre en bas à droite */
- -2px 2px 0 black,  /* Ombre en bas à gauche */
-  2px -2px 0 black, /* Ombre en haut à droite */
- -2px -2px 0 black; /* Ombre en haut à gauche */
+  color: rgb(252, 247, 247);
+  text-shadow: 2px 2px 0 black, /* Ombre en bas à droite */ -2px 2px 0 black,
+    /* Ombre en bas à gauche */ 2px -2px 0 black,
+    /* Ombre en haut à droite */ -2px -2px 0 black; /* Ombre en haut à gauche */
 }
 
 .navbar {
@@ -97,14 +86,13 @@ header {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  
 }
 
 .navbar a {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 25px;
-  text-shadow: 2px 2px 5px rgb(255, 255, 255); /* Effet d'ombre */
+  text-shadow: 2px 2px 5px rgb(0, 0, 0); /* Effet d'ombre */
 }
 .navbar .logo {
   font-size: 3em;
@@ -125,20 +113,21 @@ header {
 }
 
 .navbar .logo:hover {
-
   font-size: 3em;
   font-weight: bold;
-  color: rgb(177, 135, 135);
+  color: rgb(255, 255, 255);
   transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
   color: rgb(235, 230, 230);
-  font-size: 1.9em;
- transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-
+.navbar .nav-link ul li.active a:hover {
+  color: rgb(235, 230, 230);
+  transition: color 0.3s ease-in-out;
+}
 
 .navbar .menu {
   display: none;
@@ -146,7 +135,6 @@ header {
   top: 50px;
   right: 50px;
   width: 35px;
-  
 }
 
 /*Photos*/
@@ -163,84 +151,88 @@ header {
   text-align: center;
 }
 
-.support {
-  display: block;
-  column-count: 4;
-  padding: 3rem;
-  margin: 2rem;
-  border: dashed 2px black;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  
-}
-.support h2{
-
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.support p{
-    padding: 5rem;
-    font-weight: bold;
-    font-size: 18px;
-
-}
-.support img {
-  height: 500px;
-  width: 500px;
-}
+/*Support*/
 
 #numero {
   color: red;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   padding: 1rem;
+  text-align: center;
 }
 
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  border: solid 3px;
+  margin: 10px;
+}
 
-.apropos{
+.support img {
+  margin: 10px;
+  height: 600px;
+  width: 600px;
+}
 
-   display: flex;
-  align-items:center;
+.mail-num {
+  text-align: center;
+}
+
+.mail-num p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.mail-num a {
+  color: red;
+  font-weight: bold;
+}
+
+.mail-num a:hover {
+  color: rgb(255, 230, 0);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/*A propos*/
+
+.apropos {
+  display: flex;
+  align-items: center;
 }
 
 .textcarte {
-  
-
- column-count: 2; 
- border: dashed black 2px;
- margin: 1rem;
- padding: 2rem;
- text-align: center;
-
+  column-count: 2;
+  border: dashed black 3px;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 
-.apropos p{
-
+.apropos p {
   margin: 1rem;
   font-weight: bold;
   font-size: 15px;
-
 }
 
-
-
-
-
-
+/*Contact*/
 
 .question {
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 2rem;
-border: dashed black 2px;
-padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  border: solid 3px;
+  margin: 10px;
+  
 }
-
-
 
 .question input {
   width: 500px;
@@ -248,56 +240,38 @@ padding: 2rem;
   padding: 15px 20px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: dashed rgb(0, 0, 0) 2px;
+  border: dashed rgb(0, 0, 0) 3px;
 }
 
 .question button {
-
-    width: 500px;
-    height: 50px;
-    padding: 0 20 px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: dashed rgb(0, 0, 0) 2px;
-    background-color: rgba(32, 32, 51, 0.671);
+  width: 500px;
+  height: 50px;
+  padding: 0 20;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: white;
 }
 
-.question textarea {
+.question button:hover {
+  background-color: rgba(32, 32, 51, 0.671);
+}
+
+
+
+form {
+  margin: 20px;
+}
+
+textarea {
   display: block;
   width: 1000px;
   height: 350px;
-  padding: 15px 20px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: dashed rgb(0, 0, 0) 2px;
-
-}
-.question input:focus {
- border: solid rgb(253, 9, 9) 2px;
- outline: 0;
-
+  border: dashed rgb(0, 0, 0) 3px;
 }
 
-.question textarea:focus {
- border: solid rgb(248, 5, 5) 2px;
- outline: 0;
-
-}
-
-.question button:focus {
-  border: solid rgb(228, 12, 12) 2px;
-  outline: 0;
- 
- }
-
- .question img {
-      
-  margin: 5rem;
-  
- }
 /*Footer*/
-
-
 
 footer {
   background-color: black;
@@ -311,15 +285,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
- bottom: 0;
- left: 0;
- right: 0;
- font-weight: bold;
- font-size: 25px;
-
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 25px;
 }
-
-
 
 footer a {
   color: rgb(0, 0, 0);
@@ -328,13 +299,12 @@ footer a {
   text-shadow: 2px 2px 5px rgb(255, 255, 255); /* Effet d'ombre */
 }
 footer p {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   margin-top: 100px;
   font-weight: bold;
   font-size: 25px;
   text-shadow: 2px 2px 5px rgb(255, 255, 255); /* Effet d'ombre */
 }
-
 
 footer a:hover {
   color: rgb(255, 0, 0);
@@ -347,17 +317,15 @@ footer p:hover {
   transition: color 0.3s ease-in-out;
 }
 
-
 .footer-column {
   width: 30%;
 }
 
 .footer-column h3 {
-  
   margin-bottom: 10px;
   font-weight: bold;
- font-size: 35px;
- text-shadow: 2px 2px 5px rgb(255, 255, 255); /* Effet d'ombre */
+  font-size: 35px;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255); /* Effet d'ombre */
 }
 
 .footer-column ul {
@@ -368,73 +336,77 @@ footer p:hover {
   margin-bottom: 8px;
 }
 
-.footer-column ul li  {
+.footer-column ul li {
   text-decoration: none;
   font-size: 14px;
 }
 
-
-
 /*Responsive*/
 
- 
 @media screen and (max-width: 1500px) {
-  p { width: 90%;
-    color: red;
-    flex-direction: column;
-    
-  }
-
-}
-
-@media screen and (max-width: 1500px) {
-  .apropos { width: 90%;
+  p {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .accueil { width: 90%;
+  .apropos {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .question { width: 90%;
+  .accueil {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  img { width: 90%;
+  .question {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  form { width: 90%;
+  img {
+    width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  form {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 1500px) {
-  .question { width: 90%;
+  .question {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 1500px) {
-  .textcarte { width: 90%;
+  .textcarte {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 1500px) {
-  .support { width: 90%;
+  .support {
+    width: 90%;
     color: red;
     flex-direction: column;
   }
