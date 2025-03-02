@@ -393,21 +393,18 @@ footer p:hover {
 @media screen and (max-width: 1500px) {
   form {
     width: 90%;
-    color: red;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 1500px) {
   .question {
     width: 90%;
-    color: red;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 1500px) {
   .textcarte {
     width: 90%;
-    color: red;
     flex-direction: column;
   }
 }
