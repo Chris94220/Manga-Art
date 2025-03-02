@@ -4,28 +4,34 @@
     <meta charset="utf-8" />
     <title>Photo</title>
     <link rel="stylesheet" href="css.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    
-    <nav class="navbar">
-      <a href="index.html" class="logo">MANGAS ART</a>
+    <!--Nav-->
 
-      <div class="nav-link">
-        <ul>
-          <li class="active"><a href="index.html">Acceuil</a></li>
-          <li><a href="photo.html">Photos</a></li>
-          <li><a href="a propos.html">A propos</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="contact.html" class="contact">Nous Contacter</a></li>
-        </ul>
-      </div>
-      <img src="./Image/menu.png" alt="menu" class="menu" />
-    </nav>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">MANGAS ART</a>
 
-    <header></header>
+        <div class="nav-link">
+          <ul>
+            <li class="active"><a href="index.html">Acceuil</a></li>
+            <li><a href="photo.html">Photos</a></li>
+            <li><a href="a propos.html">A propos</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html" class="contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <img src="./Image/menu.png" alt="menu" class="menu" />
+      </nav>
+    </header>
+
+    <!--Contenue-->
+
     <h1>Gallerie</h1>
 
     <div class="Photos">
@@ -35,42 +41,57 @@
       <img src="Image/5.jpg" />
       <img src="Image/7.jpg" />
       <img src="Image/8.jpg" />
-      <img src="Image/9.jpg" />  
+      <img src="Image/9.jpg" />
       <img src="Image/10.jpg" />
-      <img src="Image/12.jpg" />  
+      <img src="Image/12.jpg" />
       <img src="Image/11.jpg" />
     </div>
 
- 
-<!--Footer-->
-<footer>
- 
-  <div class="footer-column">
-    <h3>Contact</h3>
-    <ul>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Email</a></li>
-      <li><a href="contact.html">  <i class="fas fa-phone"></i> Numero</a></li>
-      <li><a href="contact.html"><i class="fas fa-map-marker-alt"></i> Adresse</a></li>
-    </ul>
-  </div>
-<div class="footer-column">
+    <!--Footer-->
+    <footer>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Email</a>
+          </li>
+          <li>
+            <a href="contact.html"> <i class="fas fa-phone"></i> Numero</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fas fa-map-marker-alt"></i> Adresse</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>&copy; 2024 EMILE PEREIRA Christopher</p>
+      </div>
 
-<p>&copy; 2024 EMILE PEREIRA Christopher</p>
-</div>
-
-  <div class="footer-column">
-    <h3>Reseaux</h3>
-    <ul>
-      <li><a href="http://www.facebook.com" target="_blank"> <i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-    </ul>
-  </div>
-</footer>
-
+      <div class="footer-column">
+        <h3>Reseaux</h3>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a href="http://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script>
-   
       const menuHamburger = document.querySelector(".menu");
       const navLink = document.querySelector(".nav-link");
 

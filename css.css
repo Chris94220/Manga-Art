@@ -360,6 +360,14 @@ footer p:hover {
 }
 
 @media screen and (max-width: 1500px) {
+  .Photos {
+    width: 90%;
+    color: red;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
   .accueil {
     width: 90%;
     color: red;
